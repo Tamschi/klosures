@@ -1,32 +1,40 @@
-# TODO_CRATE_NAME
+# klosures
 
-[![Lib.rs](https://img.shields.io/badge/Lib.rs-*-84f)](https://lib.rs/crates/TODO_CRATE_NAME)
-[![Crates.io](https://img.shields.io/crates/v/TODO_CRATE_NAME)](https://crates.io/crates/TODO_CRATE_NAME)
-[![Docs.rs](https://docs.rs/TODO_CRATE_NAME/badge.svg)](https://docs.rs/crates/TODO_CRATE_NAME)
+[![Lib.rs](https://img.shields.io/badge/Lib.rs-*-84f)](https://lib.rs/crates/klosures)
+[![Crates.io](https://img.shields.io/crates/v/klosures)](https://crates.io/crates/klosures)
+[![Docs.rs](https://docs.rs/klosures/badge.svg)](https://docs.rs/crates/klosures)
 
 ![Rust 1.40.0](https://img.shields.io/static/v1?logo=Rust&label=&message=1.40.0&color=grey)
-[![CI](https://github.com/Tamschi/TODO_CRATE_NAME/workflows/CI/badge.svg?branch=develop)](https://github.com/Tamschi/TODO_CRATE_NAME/actions?query=workflow%3ACI+branch%3Adevelop)
-![Crates.io - License](https://img.shields.io/crates/l/TODO_CRATE_NAME/0.0.1)
+[![CI](https://github.com/Tamschi/klosures/workflows/CI/badge.svg?branch=develop)](https://github.com/Tamschi/klosures/actions?query=workflow%3ACI+branch%3Adevelop)
+![Crates.io - License](https://img.shields.io/crates/l/klosures/0.0.1)
 
-[![GitHub](https://img.shields.io/static/v1?logo=GitHub&label=&message=%20&color=grey)](https://github.com/Tamschi/TODO_CRATE_NAME)
-[![open issues](https://img.shields.io/github/issues-raw/Tamschi/TODO_CRATE_NAME)](https://github.com/Tamschi/TODO_CRATE_NAME/issues)
-[![open pull requests](https://img.shields.io/github/issues-pr-raw/Tamschi/TODO_CRATE_NAME)](https://github.com/Tamschi/TODO_CRATE_NAME/pulls)
-[![crev reviews](https://web.crev.dev/rust-reviews/badge/crev_count/TODO_CRATE_NAME.svg)](https://web.crev.dev/rust-reviews/crate/TODO_CRATE_NAME/)
+[![GitHub](https://img.shields.io/static/v1?logo=GitHub&label=&message=%20&color=grey)](https://github.com/Tamschi/klosures)
+[![open issues](https://img.shields.io/github/issues-raw/Tamschi/klosures)](https://github.com/Tamschi/klosures/issues)
+[![open pull requests](https://img.shields.io/github/issues-pr-raw/Tamschi/klosures)](https://github.com/Tamschi/klosures/pulls)
+[![crev reviews](https://web.crev.dev/rust-reviews/badge/crev_count/klosures.svg)](https://web.crev.dev/rust-reviews/crate/klosures/)
 
-TODO_README_DESCRIPTION
+Enables the use of of Kotlin-like shorthand closures by surrounding a function parameter with an additional `()`.
 
 ## Installation
 
 Please use [cargo-edit](https://crates.io/crates/cargo-edit) to always add the latest version of this library:
 
 ```cmd
-cargo add TODO_CRATE_NAME
+cargo add klosures
 ```
 
 ## Example
 
 ```rust
-TODO_EXAMPLE
+use klosures::klosures;
+
+#[klosures]
+fn klosures_test() {
+	let a = vec![(1,), (2,), (3,), (4,), (5,)];
+	let average = a.iter().map((it.0)).fold(0, (it0 + it1)) / a.len();
+	dbg!(average);
+}
+
 ```
 
 ## License
@@ -52,7 +60,7 @@ dual licensed as above, without any additional terms or conditions.
 
 ## Versioning
 
-`TODO_CRATE_NAME` strictly follows [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) with the following exceptions:
+`klosures` strictly follows [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) with the following exceptions:
 
 * The minor version will not reset to 0 on major version changes (except for v1).  
 Consider it the global feature level.

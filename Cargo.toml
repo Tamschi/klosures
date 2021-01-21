@@ -1,15 +1,15 @@
 [package]
-name = "TODO_CRATE_NAME"
+name = "klosures"
 version = "0.0.1"
 authors = ["Tamme Schichler <tamme@schichler.dev>"]
 edition = "2018"
-description = "TODO_DESCRIPTION"
+description = "Enables the use of of Kotlin-like shorthand closures by surrounding a function parameter with an additional `()`."
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/Tamschi/TODO_CRATE_NAME"
-homepage = "https://github.com/Tamschi/TODO_CRATE_NAME/tree/v0.0.1"
-documentation = "https://docs.rs/TODO_CRATE_NAME/0.0.1"
-keywords = [TODO]
-categories = [TODO]
+repository = "https://github.com/Tamschi/klosures"
+homepage = "https://github.com/Tamschi/klosures/tree/v0.0.1"
+documentation = "https://docs.rs/klosures/0.0.1"
+keywords = [] # TODO
+categories = [] #TODO
 readme = "README.md"
 include = [
 	"**/*.rs",
@@ -23,12 +23,23 @@ include = [
 publish = false
 
 [badges]
-is-it-maintained-issue-resolution = { repository = "Tamschi/TODO_CRATE_NAME" }
-is-it-maintained-open-issues = { repository = "Tamschi/TODO_CRATE_NAME" }
+is-it-maintained-issue-resolution = { repository = "Tamschi/klosures" }
+is-it-maintained-open-issues = { repository = "Tamschi/klosures" }
 maintenance = { status = "experimental" }
+
+[lib]
+proc-macro = true
 
 [dev-dependencies]
 cargo-husky = "1.5.0"
 doc-comment = "0.3.3"
 git_info = "0.1.2"
 version-sync = "0.9.1"
+
+[dependencies]
+itoa = "0.4.7"
+proc-macro2 = "1.0.24"
+quote = "1.0.8"
+smartstring = "0.2.6"
+syn = { version = "1.0.58", features = ["visit-mut"] }
+take_mut = "0.2.2"
