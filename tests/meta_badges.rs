@@ -25,6 +25,7 @@ fn weak_assert_branch() {
 }
 
 #[test]
+#[ignore = "not published"]
 fn lib() {
 	version_sync::assert_contains_regex!(
 		"README.md",
@@ -33,6 +34,7 @@ fn lib() {
 }
 
 #[test]
+#[ignore = "not published"]
 fn crates() {
 	version_sync::assert_contains_regex!(
 		"README.md",
@@ -41,6 +43,7 @@ fn crates() {
 }
 
 #[test]
+#[ignore = "not published"]
 fn docs() {
 	version_sync::assert_contains_regex!(
 		"README.md",
@@ -72,6 +75,7 @@ fn build_status() {
 }
 
 #[test]
+#[ignore = "not published"]
 fn license() {
 	version_sync::assert_contains_regex!(
 		"README.md",
@@ -118,6 +122,7 @@ fn pulls() {
 }
 
 #[test]
+#[ignore = "not published"]
 fn crev() {
 	version_sync::assert_contains_regex!(
 		"README.md",

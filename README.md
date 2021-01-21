@@ -1,27 +1,30 @@
 # klosures
 
-[![Lib.rs](https://img.shields.io/badge/Lib.rs-*-84f)](https://lib.rs/crates/klosures)
-[![Crates.io](https://img.shields.io/crates/v/klosures)](https://crates.io/crates/klosures)
-[![Docs.rs](https://docs.rs/klosures/badge.svg)](https://docs.rs/crates/klosures)
+
+<!-- [![Lib.rs](https://img.shields.io/badge/Lib.rs-*-84f)](https://lib.rs/crates/klosures) -->
+<!-- [![Crates.io](https://img.shields.io/crates/v/klosures)](https://crates.io/crates/klosures) -->
+<!-- [![Docs.rs](https://docs.rs/klosures/badge.svg)](https://docs.rs/crates/klosures) -->
 
 ![Rust 1.40.0](https://img.shields.io/static/v1?logo=Rust&label=&message=1.40.0&color=grey)
 [![CI](https://github.com/Tamschi/klosures/workflows/CI/badge.svg?branch=develop)](https://github.com/Tamschi/klosures/actions?query=workflow%3ACI+branch%3Adevelop)
-![Crates.io - License](https://img.shields.io/crates/l/klosures/0.0.1)
+<!-- ![Crates.io - License](https://img.shields.io/crates/l/klosures/0.0.1) -->
 
 [![GitHub](https://img.shields.io/static/v1?logo=GitHub&label=&message=%20&color=grey)](https://github.com/Tamschi/klosures)
 [![open issues](https://img.shields.io/github/issues-raw/Tamschi/klosures)](https://github.com/Tamschi/klosures/issues)
 [![open pull requests](https://img.shields.io/github/issues-pr-raw/Tamschi/klosures)](https://github.com/Tamschi/klosures/pulls)
-[![crev reviews](https://web.crev.dev/rust-reviews/badge/crev_count/klosures.svg)](https://web.crev.dev/rust-reviews/crate/klosures/)
+<!-- [![crev reviews](https://web.crev.dev/rust-reviews/badge/crev_count/klosures.svg)](https://web.crev.dev/rust-reviews/crate/klosures/) -->
 
 Enables the use of of Kotlin-like shorthand closures by surrounding a function parameter with an additional `()`.
 
 ## Installation
 
-Please use [cargo-edit](https://crates.io/crates/cargo-edit) to always add the latest version of this library:
+<!-- Please use [cargo-edit](https://crates.io/crates/cargo-edit) to always add the latest version of this library: -->
 
-```cmd
+<!-- ```cmd
 cargo add klosures
-```
+``` -->
+
+Using a macro like this is usually a bad idea due to how much that increases compile time (and the macro here in particular uses a full Syn parsing step). As such, I haven't published it on crates.io.
 
 ## Example
 
