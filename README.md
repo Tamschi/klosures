@@ -5,7 +5,7 @@
 <!-- [![Crates.io](https://img.shields.io/crates/v/klosures)](https://crates.io/crates/klosures) -->
 <!-- [![Docs.rs](https://docs.rs/klosures/badge.svg)](https://docs.rs/crates/klosures) -->
 
-![Rust 1.40.0](https://img.shields.io/static/v1?logo=Rust&label=&message=1.40.0&color=grey)
+![Rust 1.42.0](https://img.shields.io/static/v1?logo=Rust&label=&message=1.42.0&color=grey)
 [![CI](https://github.com/Tamschi/klosures/workflows/CI/badge.svg?branch=develop)](https://github.com/Tamschi/klosures/actions?query=workflow%3ACI+branch%3Adevelop)
 <!-- ![Crates.io - License](https://img.shields.io/crates/l/klosures/0.0.1) -->
 
