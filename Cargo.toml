@@ -40,6 +40,6 @@ version-sync = "0.9.1"
 itoa = "0.4.7"
 proc-macro2 = "1.0.24"
 quote = "1.0.8"
-smartstring = "0.2.6"
+smartstring = "1.0.0"
 syn = { version = "1.0.58", features = ["visit-mut"] }
 take_mut = "0.2.2"
