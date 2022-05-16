@@ -37,7 +37,7 @@ git_info = "0.1.2"
 version-sync = "0.9.1"
 
 [dependencies]
-itoa = "0.4.7"
+itoa = "1.0.2"
 proc-macro2 = "1.0.24"
 quote = "1.0.8"
 smartstring = "0.2.6"
